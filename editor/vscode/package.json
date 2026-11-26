@@ -2,8 +2,8 @@
   "name": "atslang",
   "displayName": "ATSLang",
   "description": "ATSLang dili için renklendirme ve düzenleyici desteği",
-  "version": "0.7.2",
-  "publisher": "ats-creative-media",
+  "version": "0.7.3",
+  "publisher": "AtsCreativeMedia",
   "engines": {
     "vscode": "^1.60.0"
   },

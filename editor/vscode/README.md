@@ -17,6 +17,6 @@ Olmazsa elle: VS Code → Eklentiler paneli → sağ üstteki **...** → **Inst
 `editor/vscode` içinde değişiklik yaptıktan sonra paketi yeniden oluşturun: `python tools/build_vsix.py`
 
 Elle kurmak isterseniz bu `editor/vscode` klasörünü şuraya kopyalayın:
-`%USERPROFILE%\.vscode\extensions\ats-creative-media.atslang-0.7.2`
+`%USERPROFILE%\.vscode\extensions\AtsCreativeMedia.atslang-0.7.3`
 
 Kaldırmak için aynı klasörü silmeniz yeterli.
