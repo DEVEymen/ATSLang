@@ -1,8 +1,8 @@
 {
-  "name": "atslang",
+  "name": "atslang-language-support",
   "displayName": "ATSLang",
   "description": "Türkçe programlama dili ATSLang için renklendirme, otomatik tamamlama ve kod kalıpları",
-  "version": "0.7.3",
+  "version": "0.7.4",
   "publisher": "AtsCreativeMedia",
   "license": "MIT",
   "icon": "images/icon.png",

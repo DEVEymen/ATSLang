@@ -1,5 +1,8 @@
 # Değişiklikler
 
+## 0.7.4
+- Marketplace kimliği: `AtsCreativeMedia.atslang-language-support`
+
 ## 0.7.3
 - Yayıncı: AtsCreativeMedia
 - Marketplace için ikon, lisans ve bağlantılar
