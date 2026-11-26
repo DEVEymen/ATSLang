@@ -1,0 +1,3 @@
+var a = oku()
+yaz(a)
+var b = oku()

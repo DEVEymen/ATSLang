@@ -1,0 +1,5 @@
+fonksiyon f(x) {
+    eger x { dondur 1 }
+}
+yaz("önce")
+yaz(f(yanlis))

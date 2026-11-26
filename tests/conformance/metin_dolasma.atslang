@@ -1,0 +1,3 @@
+her h "abc" { yaz(h) }
+yaz("merhaba"[1])
+yaz(uzunluk("şğü"))

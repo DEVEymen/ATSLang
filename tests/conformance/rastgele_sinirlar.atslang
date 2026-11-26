@@ -1,0 +1,7 @@
+yaz(rastgele(5, 5))
+var dogru_mu = dogru
+tekrarla 200 {
+    var r = rastgele(1, 6)
+    eger r < 1 veya r > 6 { dogru_mu = yanlis }
+}
+yaz(dogru_mu)

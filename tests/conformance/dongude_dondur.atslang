@@ -1,0 +1,7 @@
+fonksiyon ilk_cift(bas) {
+    her i aralik(bas, 100) {
+        eger i % 2 == 0 { dondur i }
+    }
+    dondur -1
+}
+yaz(ilk_cift(7))

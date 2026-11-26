@@ -1,0 +1,37 @@
+# ATSLang 0.4: döngüler ve fonksiyonlar
+
+fonksiyon kare(x: tam): tam {
+    dondur x * x
+}
+
+fonksiyon asal_mi(n: tam): mantiksal {
+    eger n < 2 { dondur yanlis }
+    var bolen = 2
+    iken bolen * bolen <= n {
+        eger n % bolen == 0 { dondur yanlis }
+        bolen = bolen + 1
+    }
+    dondur dogru
+}
+
+fonksiyon faktoriyel(n) {
+    eger n <= 1 { dondur 1 }
+    dondur n * faktoriyel(n - 1)
+}
+
+yaz("1'den 5'e kareler:")
+her i aralik(1, 5) {
+    yaz(metin(i) + " x " + metin(i) + " = " + metin(kare(i)))
+}
+
+yaz("50'ye kadar asal sayılar:")
+her n aralik(1, 50) {
+    eger degil asal_mi(n) { devam }
+    yaz(n)
+}
+
+yaz("10! = " + metin(faktoriyel(10)))
+
+yaz("Geri sayım:")
+her i aralik(3, 1, -1) { yaz(i) }
+tekrarla 3 { yaz("Hip hip hurra!") }

@@ -1,0 +1,7 @@
+yaz(mutlak(-3))
+yaz(mutlak(-2.5))
+yaz(yuvarla(2.5))
+yaz(yuvarla(-2.5))
+yaz(yuvarla(2.4))
+yaz(yuvarla(7))
+yaz(karekok(16))

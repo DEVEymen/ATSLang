@@ -1,0 +1,7 @@
+var toplam = 0
+eger dogru {
+    var ek = 5
+    toplam = toplam + ek
+}
+eger dogru { var ek = 7; toplam = toplam + ek }
+yaz(toplam)

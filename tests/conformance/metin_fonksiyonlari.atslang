@@ -1,0 +1,7 @@
+yaz(bol("elma,armut", ","))
+yaz(bol("  bir   iki "))
+yaz(birlestir(["a", "b"], "-"))
+yaz(kirp("  x  "))
+yaz(degistir("kedi kedi", "kedi", "köpek"))
+yaz(icerir("merhaba", "hab"))
+yaz(icerir([1, 2], 2.0))

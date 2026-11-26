@@ -1,0 +1,5 @@
+fonksiyon kare(x) {
+    dondur x * x
+}
+yaz(kare(4))
+yaz(kare(1.5))

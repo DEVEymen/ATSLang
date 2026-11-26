@@ -1,0 +1,5 @@
+her i aralik(1, 2) {
+    her j aralik(1, 2) {
+        yaz(metin(i) + "x" + metin(j))
+    }
+}

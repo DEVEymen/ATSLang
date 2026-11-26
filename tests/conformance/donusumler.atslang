@@ -1,0 +1,6 @@
+yaz(tam("42") + 1)
+yaz(tam(3.9))
+yaz(tam(-3.9))
+yaz(ondalik("2.5") * 2)
+yaz(ondalik(3))
+yaz(metin(1.5) + "x")

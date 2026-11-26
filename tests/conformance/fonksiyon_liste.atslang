@@ -1,0 +1,6 @@
+fonksiyon toplam(sayilar: liste): tam {
+    var t = 0
+    her s sayilar { t = t + s }
+    dondur t
+}
+yaz(toplam([5, 6, 7]))

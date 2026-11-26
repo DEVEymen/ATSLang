@@ -1,0 +1,4 @@
+tekrarla 2 {
+    var x = 1
+    yaz(x)
+}

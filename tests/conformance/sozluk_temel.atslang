@@ -1,0 +1,6 @@
+var k = {"ad": "Ali", "yas": 20}
+yaz(k["ad"])
+k["yas"] = k["yas"] + 1
+k["sehir"] = "İzmir"
+yaz(k)
+yaz(uzunluk(k))

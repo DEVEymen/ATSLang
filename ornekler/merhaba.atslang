@@ -1,0 +1,10 @@
+# ATSLang 0.1 örnek programı
+yaz("Merhaba dünya!")
+yaz("ATSLang 0.1'e hoş geldiniz.")   # yorum komutun sağında da olabilir
+
+yaz("Satır 1\nSatır 2")
+yaz("Tab:\t| Tırnak: \" | Ters çizgi: \\")
+yaz("Bir"); yaz("İki")
+yaz(
+    "Parantez içinde alt satıra geçilebilir"
+)

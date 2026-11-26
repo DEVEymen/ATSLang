@@ -1,0 +1,4 @@
+yaz("önce")
+var s = 0
+yaz(10 / s)
+yaz("sonra")

@@ -1,0 +1,5 @@
+fonksiyon f() {
+    var yerel = 1
+}
+f()
+yaz(yerel)

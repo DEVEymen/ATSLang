@@ -1,0 +1,17 @@
+# ATSLang 0.5: listeler ve kullanıcıdan girdi
+var liste = []
+
+yaz("Alışveriş listesine ürün ekle. Bitirmek için boş satır gir.")
+iken dogru {
+    var urun = oku("Ürün: ")
+    eger urun == "" { dur }
+    ekle(liste, urun)
+}
+
+yaz("")
+yaz("Listende " + metin(uzunluk(liste)) + " ürün var:")
+var sira = 1
+her urun liste {
+    yaz(metin(sira) + ". " + urun)
+    sira = sira + 1
+}

@@ -1,0 +1,2 @@
+fonksiyon f() { devam }
+tekrarla 1 { f() }

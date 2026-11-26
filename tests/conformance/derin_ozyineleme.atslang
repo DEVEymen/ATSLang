@@ -1,0 +1,5 @@
+fonksiyon say(n) {
+    eger n == 0 { dondur 0 }
+    dondur say(n - 1) + 1
+}
+yaz(say(999))

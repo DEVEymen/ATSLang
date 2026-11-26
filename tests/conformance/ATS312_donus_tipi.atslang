@@ -1,0 +1,4 @@
+fonksiyon f(): tam {
+    dondur "a"
+}
+yaz(f())

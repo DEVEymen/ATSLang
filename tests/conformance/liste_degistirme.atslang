@@ -1,0 +1,5 @@
+var l = [1, 2, 3]
+l[1] = 20
+yaz(l)
+yaz(sil(l, 0))
+yaz(l)

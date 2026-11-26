@@ -1,0 +1,1 @@
+eger 1 < 2 { yaz("a") } degilse { yaz("b") }

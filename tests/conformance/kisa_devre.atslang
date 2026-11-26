@@ -1,0 +1,2 @@
+yaz(yanlis ve 1 / 0 == 0)
+yaz(dogru veya tam("x") == 1)

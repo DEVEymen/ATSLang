@@ -1,0 +1,4 @@
+#!/usr/bin/env ats
+# tam satir yorum
+yaz("a")  # sagda yorum
+yaz("# yorum degil")

@@ -1,0 +1,53 @@
+{
+  "name": "atslang",
+  "displayName": "ATSLang",
+  "description": "ATSLang dili için renklendirme ve düzenleyici desteği",
+  "version": "0.7.2",
+  "publisher": "ats-creative-media",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "atslang",
+        "aliases": [
+          "ATSLang",
+          "atslang"
+        ],
+        "extensions": [
+          ".atslang"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "atslang",
+        "scopeName": "source.atslang",
+        "path": "./syntaxes/atslang.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "atslang",
+        "path": "./snippets/atslang.json"
+      }
+    ],
+    "configurationDefaults": {
+      "[atslang]": {
+        "editor.quickSuggestions": {
+          "other": "on",
+          "comments": "off",
+          "strings": "off"
+        },
+        "editor.snippetSuggestions": "top",
+        "editor.wordBasedSuggestions": "matchingDocuments"
+      }
+    }
+  },
+  "license": "MIT"
+}

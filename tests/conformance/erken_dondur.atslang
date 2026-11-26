@@ -1,0 +1,8 @@
+fonksiyon isaret(n) {
+    eger n > 0 { dondur "pozitif" }
+    eger n < 0 { dondur "negatif" }
+    dondur "sıfır"
+}
+yaz(isaret(5))
+yaz(isaret(-2))
+yaz(isaret(0))

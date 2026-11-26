@@ -1,0 +1,2 @@
+fonksiyon f() { }
+var x = f()

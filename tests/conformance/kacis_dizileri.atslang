@@ -1,0 +1,4 @@
+yaz("a\nb")
+yaz("c\td")
+yaz("tirnak: \"")
+yaz("ters: \\")

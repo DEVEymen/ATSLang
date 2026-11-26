@@ -1,0 +1,6 @@
+var yas = 20
+eger yas >= 18 {
+    yaz("Reşit")
+} degilse {
+    yaz("Reşit değil")
+}

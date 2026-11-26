@@ -1,0 +1,7 @@
+her i aralik(1, 2) {
+    her j aralik(1, 5) {
+        eger j == 2 { dur }
+        yaz(j)
+    }
+    yaz("i=" + metin(i))
+}

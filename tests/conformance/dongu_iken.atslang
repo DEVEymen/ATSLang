@@ -1,0 +1,5 @@
+var i = 0
+iken i < 3 {
+    yaz(i)
+    i = i + 1
+}

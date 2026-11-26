@@ -1,0 +1,5 @@
+her i aralik(1, 10) {
+    eger i % 2 == 0 { devam }
+    eger i > 7 { dur }
+    yaz(i)
+}

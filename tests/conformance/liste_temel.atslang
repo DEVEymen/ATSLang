@@ -1,0 +1,6 @@
+var l = ["elma", "armut"]
+ekle(l, "kiraz")
+yaz(l)
+yaz(l[0])
+yaz(l[2])
+yaz(uzunluk(l))

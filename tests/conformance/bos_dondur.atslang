@@ -1,0 +1,6 @@
+fonksiyon f(x) {
+    eger x { dondur }
+    yaz("devam")
+}
+f(dogru)
+f(yanlis)

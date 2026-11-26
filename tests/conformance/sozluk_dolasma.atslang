@@ -1,0 +1,3 @@
+var s = {"x": 1, "y": 2}
+her k s { yaz(k + "=" + metin(s[k])) }
+yaz(anahtarlar(s))

@@ -1,0 +1,5 @@
+var ad = "Ayşe"
+var yas = 20
+yas = yas + 1
+yaz(ad)
+yaz(yas)

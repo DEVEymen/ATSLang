@@ -1,0 +1,4 @@
+fonksiyon f(n) {
+    dondur f(n + 1)
+}
+yaz(f(0))

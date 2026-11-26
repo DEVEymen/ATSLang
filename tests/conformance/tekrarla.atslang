@@ -1,0 +1,4 @@
+tekrarla 3 {
+    yaz("a")
+}
+tekrarla 0 { yaz("hiç") }

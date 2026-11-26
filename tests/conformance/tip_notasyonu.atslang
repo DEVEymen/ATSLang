@@ -1,0 +1,7 @@
+var a: tam = 1
+var b: ondalik = 2
+var c: metin = "x"
+b = 3
+yaz(a)
+yaz(b)
+yaz(c)

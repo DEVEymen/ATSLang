@@ -1,0 +1,7 @@
+var sayac = 0
+fonksiyon artir() {
+    sayac = sayac + 1
+}
+artir()
+artir()
+yaz(sayac)

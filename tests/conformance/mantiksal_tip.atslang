@@ -1,0 +1,4 @@
+var d: mantiksal = yanlis
+d = dogru
+yaz(d)
+yaz(metin(d) + "!")

@@ -1,0 +1,3 @@
+var toplam = 0
+her s [1, 2, 3, 4] { toplam = toplam + s }
+yaz(toplam)

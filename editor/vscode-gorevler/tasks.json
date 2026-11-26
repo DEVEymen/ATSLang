@@ -1,0 +1,68 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "ATSLang: bu dosyayı çalıştır",
+      "type": "process",
+      "command": "python",
+      "args": [
+        "-m",
+        "atslang",
+        "${file}"
+      ],
+      "options": {
+        "cwd": "${fileDirname}",
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}/src"
+        }
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "focus": true,
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "ATSLang: etkileşimli mod",
+      "type": "process",
+      "command": "python",
+      "args": [
+        "-m",
+        "atslang",
+        "--etkilesimli"
+      ],
+      "options": {
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}/src"
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "focus": true,
+        "panel": "dedicated"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "ATSLang: testleri çalıştır",
+      "type": "process",
+      "command": "python",
+      "args": [
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": "test",
+      "problemMatcher": []
+    }
+  ]
+}

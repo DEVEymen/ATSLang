@@ -1,0 +1,311 @@
+{
+  "var": {
+    "prefix": "var",
+    "body": [
+      "var ${1:ad} = ${2:deger}"
+    ],
+    "description": "Değişken tanımlar"
+  },
+  "var (tipli)": {
+    "prefix": "var",
+    "body": [
+      "var ${1:ad}: ${2|tam,ondalik,metin,mantiksal,liste,sozluk|} = ${3:deger}"
+    ],
+    "description": "Tipli değişken tanımlar"
+  },
+  "sabit": {
+    "prefix": "sabit",
+    "body": [
+      "sabit ${1:AD} = ${2:deger}"
+    ],
+    "description": "Değeri değişmeyen bir sabit tanımlar"
+  },
+  "eger": {
+    "prefix": "eger",
+    "body": [
+      "eger ${1:kosul} {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Koşul doğruysa bloğu çalıştırır"
+  },
+  "eger ... degilse": {
+    "prefix": "eger",
+    "body": [
+      "eger ${1:kosul} {",
+      "\t$2",
+      "} degilse {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Koşula göre iki bloktan birini çalıştırır"
+  },
+  "degilse": {
+    "prefix": "degilse",
+    "body": [
+      "degilse {",
+      "\t$0",
+      "}"
+    ],
+    "description": "eger bloğu tutmazsa çalışır"
+  },
+  "degilse eger": {
+    "prefix": "degilse",
+    "body": [
+      "degilse eger ${1:kosul} {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Başka bir koşulu dener"
+  },
+  "iken": {
+    "prefix": "iken",
+    "body": [
+      "iken ${1:kosul} {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Koşul doğru olduğu sürece tekrarlar"
+  },
+  "tekrarla": {
+    "prefix": "tekrarla",
+    "body": [
+      "tekrarla ${1:5} {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Bloğu belirtilen sayıda tekrarlar"
+  },
+  "her ... aralik": {
+    "prefix": "her",
+    "body": [
+      "her ${1:i} aralik(${2:1}, ${3:10}) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Sayıları sırayla dolaşır (son sayı dahil)"
+  },
+  "her ... liste": {
+    "prefix": "her",
+    "body": [
+      "her ${1:eleman} ${2:liste} {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Bir listenin, metnin ya da sözlüğün elemanlarını dolaşır"
+  },
+  "fonksiyon": {
+    "prefix": "fonksiyon",
+    "body": [
+      "fonksiyon ${1:ad}(${2:parametre}) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Fonksiyon tanımlar"
+  },
+  "fonksiyon (tipli)": {
+    "prefix": "fonksiyon",
+    "body": [
+      "fonksiyon ${1:ad}(${2:a}: ${3:tam}): ${4:tam} {",
+      "\tdondur $0",
+      "}"
+    ],
+    "description": "Tipli fonksiyon tanımlar"
+  },
+  "dondur": {
+    "prefix": "dondur",
+    "body": [
+      "dondur ${1:deger}"
+    ],
+    "description": "Fonksiyondan değer döndürür"
+  },
+  "dur": {
+    "prefix": "dur",
+    "body": [
+      "dur"
+    ],
+    "description": "Döngüden çıkar"
+  },
+  "devam": {
+    "prefix": "devam",
+    "body": [
+      "devam"
+    ],
+    "description": "Döngünün bir sonraki turuna geçer"
+  },
+  "dogru": {
+    "prefix": "dogru",
+    "body": [
+      "dogru"
+    ],
+    "description": "Mantıksal doğru değeri"
+  },
+  "yanlis": {
+    "prefix": "yanlis",
+    "body": [
+      "yanlis"
+    ],
+    "description": "Mantıksal yanlış değeri"
+  },
+  "ve": {
+    "prefix": "ve",
+    "body": [
+      "ve"
+    ],
+    "description": "İki koşul da doğruysa doğru"
+  },
+  "veya": {
+    "prefix": "veya",
+    "body": [
+      "veya"
+    ],
+    "description": "Koşullardan biri doğruysa doğru"
+  },
+  "degil": {
+    "prefix": "degil",
+    "body": [
+      "degil"
+    ],
+    "description": "Koşulun tersini alır"
+  },
+  "yaz": {
+    "prefix": "yaz",
+    "body": [
+      "yaz(${1:deger})"
+    ],
+    "description": "Değeri ekrana yazar"
+  },
+  "oku": {
+    "prefix": "oku",
+    "body": [
+      "oku(\"${1:Soru: }\")"
+    ],
+    "description": "Kullanıcıdan bir satır metin okur"
+  },
+  "metin": {
+    "prefix": "metin",
+    "body": [
+      "metin(${1:deger})"
+    ],
+    "description": "Değeri metne çevirir"
+  },
+  "tam": {
+    "prefix": "tam",
+    "body": [
+      "tam(${1:deger})"
+    ],
+    "description": "Değeri tam sayıya çevirir"
+  },
+  "ondalik": {
+    "prefix": "ondalik",
+    "body": [
+      "ondalik(${1:deger})"
+    ],
+    "description": "Değeri ondalık sayıya çevirir"
+  },
+  "uzunluk": {
+    "prefix": "uzunluk",
+    "body": [
+      "uzunluk(${1:deger})"
+    ],
+    "description": "Liste, metin ya da sözlüğün uzunluğu"
+  },
+  "ekle": {
+    "prefix": "ekle",
+    "body": [
+      "ekle(${1:liste}, ${2:deger})"
+    ],
+    "description": "Listenin sonuna eleman ekler"
+  },
+  "sil": {
+    "prefix": "sil",
+    "body": [
+      "sil(${1:liste}, ${2:indeks})"
+    ],
+    "description": "Listeden ya da sözlükten eleman çıkarır"
+  },
+  "buyuk": {
+    "prefix": "buyuk",
+    "body": [
+      "buyuk(${1:metin})"
+    ],
+    "description": "Büyük harfe çevirir (Türkçe kurallarıyla)"
+  },
+  "kucuk": {
+    "prefix": "kucuk",
+    "body": [
+      "kucuk(${1:metin})"
+    ],
+    "description": "Küçük harfe çevirir (Türkçe kurallarıyla)"
+  },
+  "kirp": {
+    "prefix": "kirp",
+    "body": [
+      "kirp(${1:metin})"
+    ],
+    "description": "Baştaki ve sondaki boşlukları siler"
+  },
+  "bol": {
+    "prefix": "bol",
+    "body": [
+      "bol(${1:metin}, \"${2:,}\")"
+    ],
+    "description": "Metni ayraçtan bölüp liste yapar"
+  },
+  "birlestir": {
+    "prefix": "birlestir",
+    "body": [
+      "birlestir(${1:liste}, \"${2:, }\")"
+    ],
+    "description": "Metin listesini birleştirir"
+  },
+  "degistir": {
+    "prefix": "degistir",
+    "body": [
+      "degistir(${1:metin}, \"${2:eski}\", \"${3:yeni}\")"
+    ],
+    "description": "Metindeki parçaları değiştirir"
+  },
+  "icerir": {
+    "prefix": "icerir",
+    "body": [
+      "icerir(${1:koleksiyon}, ${2:deger})"
+    ],
+    "description": "İçinde var mı diye bakar"
+  },
+  "anahtarlar": {
+    "prefix": "anahtarlar",
+    "body": [
+      "anahtarlar(${1:sozluk})"
+    ],
+    "description": "Sözlüğün anahtarlarını liste olarak verir"
+  },
+  "rastgele": {
+    "prefix": "rastgele",
+    "body": [
+      "rastgele(${1:1}, ${2:100})"
+    ],
+    "description": "İki sayı arasında rastgele tam sayı (ikisi de dahil)"
+  },
+  "mutlak": {
+    "prefix": "mutlak",
+    "body": [
+      "mutlak(${1:sayi})"
+    ],
+    "description": "Mutlak değer"
+  },
+  "yuvarla": {
+    "prefix": "yuvarla",
+    "body": [
+      "yuvarla(${1:sayi})"
+    ],
+    "description": "En yakın tam sayıya yuvarlar"
+  },
+  "karekok": {
+    "prefix": "karekok",
+    "body": [
+      "karekok(${1:sayi})"
+    ],
+    "description": "Karekök"
+  }
+}

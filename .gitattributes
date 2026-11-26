@@ -1,0 +1,3 @@
+# Uyumluluk testleri bayt düzeyinde karşılaştırılır (BOM, \r\n, geçersiz UTF-8).
+# Git'in satır sonlarını değiştirmesini engelle.
+tests/conformance/** -text

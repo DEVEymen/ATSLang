@@ -1,0 +1,6 @@
+yaz({"a": 1, "b": 2} == {"b": 2, "a": 1.0})
+var s = {"a": 1, "b": 2}
+yaz(sil(s, "a"))
+yaz(s)
+yaz(icerir(s, "a"))
+yaz(icerir(s, "b"))

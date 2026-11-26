@@ -1,0 +1,4 @@
+eger dogru {
+    var x = 1
+}
+yaz(x)

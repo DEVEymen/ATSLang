@@ -1,0 +1,5 @@
+fonksiyon fib(n) {
+    eger n < 2 { dondur n }
+    dondur fib(n - 1) + fib(n - 2)
+}
+yaz(fib(15))

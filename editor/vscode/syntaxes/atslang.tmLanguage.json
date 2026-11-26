@@ -1,0 +1,110 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "ATSLang",
+  "scopeName": "source.atslang",
+  "patterns": [
+    {
+      "include": "#comment"
+    },
+    {
+      "include": "#string"
+    },
+    {
+      "include": "#number"
+    },
+    {
+      "include": "#function-definition"
+    },
+    {
+      "include": "#keyword"
+    },
+    {
+      "include": "#type-annotation"
+    },
+    {
+      "include": "#builtin"
+    },
+    {
+      "include": "#function-call"
+    },
+    {
+      "include": "#operator"
+    }
+  ],
+  "repository": {
+    "comment": {
+      "name": "comment.line.number-sign.atslang",
+      "match": "#.*$"
+    },
+    "string": {
+      "name": "string.quoted.double.atslang",
+      "begin": "\"",
+      "end": "\"|$",
+      "patterns": [
+        {
+          "name": "constant.character.escape.atslang",
+          "match": "\\\\[nt\"\\\\]"
+        },
+        {
+          "name": "invalid.illegal.escape.atslang",
+          "match": "\\\\."
+        }
+      ]
+    },
+    "number": {
+      "name": "constant.numeric.atslang",
+      "match": "\\b[0-9]+(\\.[0-9]+)?\\b"
+    },
+    "keyword": {
+      "patterns": [
+        {
+          "name": "keyword.control.atslang",
+          "match": "\\b(eger|degilse|iken|her|tekrarla|dur|devam|dondur)\\b"
+        },
+        {
+          "name": "storage.type.atslang",
+          "match": "\\b(var|sabit|fonksiyon)\\b"
+        },
+        {
+          "name": "constant.language.boolean.atslang",
+          "match": "\\b(dogru|yanlis)\\b"
+        },
+        {
+          "name": "keyword.operator.logical.atslang",
+          "match": "\\b(ve|veya|degil)\\b"
+        }
+      ]
+    },
+    "function-definition": {
+      "match": "\\b(fonksiyon)\\s+([A-Za-z_][A-Za-z0-9_]*)",
+      "captures": {
+        "1": {
+          "name": "storage.type.function.atslang"
+        },
+        "2": {
+          "name": "entity.name.function.atslang"
+        }
+      }
+    },
+    "type-annotation": {
+      "match": ":\\s*(tam|ondalik|metin|mantiksal|liste|sozluk)\\b",
+      "captures": {
+        "1": {
+          "name": "support.type.atslang"
+        }
+      }
+    },
+    "builtin": {
+      "name": "support.function.builtin.atslang",
+      "match": "\\b(anahtarlar|birlestir|bol|buyuk|degistir|ekle|icerir|karekok|kirp|kucuk|metin|mutlak|oku|ondalik|rastgele|sil|tam|uzunluk|yaz|yuvarla|aralik)\\b(?=\\s*\\()"
+    },
+    "function-call": {
+      "name": "entity.name.function.call.atslang",
+      "match": "\\b[A-Za-z_][A-Za-z0-9_]*(?=\\s*\\()"
+    },
+    "operator": {
+      "name": "keyword.operator.atslang",
+      "match": "==|!=|<=|>=|//|[+\\-*/%<>=]"
+    }
+  }
+}

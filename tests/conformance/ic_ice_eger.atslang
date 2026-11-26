@@ -1,0 +1,8 @@
+var x = 5
+eger x > 0 {
+    eger x > 3 {
+        yaz("büyük")
+    } degilse {
+        yaz("küçük")
+    }
+}

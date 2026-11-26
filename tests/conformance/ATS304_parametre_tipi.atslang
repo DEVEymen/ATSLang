@@ -1,0 +1,2 @@
+fonksiyon f(a: tam) { }
+f("x")

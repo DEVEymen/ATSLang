@@ -1,0 +1,6 @@
+fonksiyon ortalama(a: ondalik, b: ondalik): ondalik {
+    dondur (a + b) / 2
+}
+yaz(ortalama(1, 2))
+fonksiyon ikikat(n: tam): ondalik { dondur n * 2 }
+yaz(ikikat(3))

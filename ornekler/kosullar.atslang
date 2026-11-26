@@ -1,0 +1,27 @@
+# ATSLang 0.3: koşullar
+var yas = 17
+var ehliyet = yanlis
+
+eger yas >= 18 {
+    yaz("Reşitsin.")
+} degilse {
+    yaz("Henüz reşit değilsin.")
+}
+
+var not = 82
+eger not >= 90 {
+    yaz("Harf notu: AA")
+} degilse eger not >= 80 {
+    yaz("Harf notu: BA")
+} degilse eger not >= 70 {
+    yaz("Harf notu: BB")
+} degilse {
+    yaz("Harf notu: FF")
+}
+
+eger yas >= 18 ve degil ehliyet {
+    yaz("Ehliyet alabilirsin.")
+}
+
+var gecti: mantiksal = not >= 50
+yaz("Geçti mi? " + metin(gecti))

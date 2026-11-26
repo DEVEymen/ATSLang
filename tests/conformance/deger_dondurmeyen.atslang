@@ -1,0 +1,5 @@
+fonksiyon selam(ad) {
+    yaz("Merhaba " + ad)
+}
+selam("Ali")
+selam("Ayşe")

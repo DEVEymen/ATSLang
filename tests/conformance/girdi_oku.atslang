@@ -1,0 +1,4 @@
+var ad = oku("Adın? ")
+yaz("Merhaba " + ad)
+var yas = tam(oku())
+yaz(yas + 1)

@@ -1,0 +1,10 @@
+var not = 75
+eger not >= 90 {
+    yaz("AA")
+}
+degilse eger not >= 70 {
+    yaz("BB")
+}
+degilse {
+    yaz("FF")
+}

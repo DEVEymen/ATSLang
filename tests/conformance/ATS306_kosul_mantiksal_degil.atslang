@@ -1,0 +1,4 @@
+yaz("once")
+eger 1 {
+    yaz("a")
+}

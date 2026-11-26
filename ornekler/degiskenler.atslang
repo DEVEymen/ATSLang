@@ -1,0 +1,21 @@
+# ATSLang 0.2: değişkenler ve sayılar
+var ad = "Ayşe"
+var yas: tam = 20
+sabit DOGUM_YILI = 2006
+
+yaz("Merhaba " + ad + "!")
+yas = yas + 1
+yaz("Yaşın: " + metin(yas))
+
+var fiyat: ondalik = 49.90
+var adet = 3
+var toplam = fiyat * adet
+yaz("Toplam: " + metin(toplam) + " TL")
+
+yaz(7 / 2)      # 3.5
+yaz(7 // 2)     # 3
+yaz(7 % 2)      # 1
+yaz((2 + 3) * 4)
+
+var girdi = "42"
+yaz(tam(girdi) + 8)

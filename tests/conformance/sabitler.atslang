@@ -1,0 +1,2 @@
+sabit PI = 3.14
+yaz(PI * 2)

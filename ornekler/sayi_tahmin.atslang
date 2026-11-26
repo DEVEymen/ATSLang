@@ -1,0 +1,25 @@
+# ATSLang 0.6: sayı tahmin oyunu
+yaz("1 ile 100 arasında bir sayı tuttum. Bil bakalım!")
+var hedef = rastgele(1, 100)
+var deneme = 0
+
+iken dogru {
+    var girdi = kirp(oku("Tahminin: "))
+    eger girdi == "" { devam }
+    var tahmin = tam(girdi)
+    deneme = deneme + 1
+    eger tahmin < hedef {
+        yaz("Daha büyük bir sayı dene.")
+    } degilse eger tahmin > hedef {
+        yaz("Daha küçük bir sayı dene.")
+    } degilse {
+        yaz("Tebrikler! " + metin(deneme) + " denemede bildin.")
+        dur
+    }
+}
+
+var cevap = kucuk(kirp(oku("Skor tablosuna adını yazalım mı? (evet/hayır) ")))
+eger cevap == "evet" {
+    var skor = {"ad": oku("Adın: "), "deneme": deneme}
+    yaz(skor)
+}

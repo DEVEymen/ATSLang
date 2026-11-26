@@ -1,0 +1,3 @@
+var ad = "Ali"
+yaz("Merhaba " + ad + "!")
+yaz("Yaş: " + metin(30))
