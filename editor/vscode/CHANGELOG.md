@@ -1,5 +1,8 @@
 # Değişiklikler
 
+## 0.7.5
+- Görünen ad: ATSLang - Türkçe Programlama Dili
+
 ## 0.7.4
 - Marketplace kimliği: `AtsCreativeMedia.atslang-language-support`
 
