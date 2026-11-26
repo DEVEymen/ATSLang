@@ -1,14 +1,37 @@
 {
   "name": "atslang",
   "displayName": "ATSLang",
-  "description": "ATSLang dili için renklendirme ve düzenleyici desteği",
+  "description": "Türkçe programlama dili ATSLang için renklendirme, otomatik tamamlama ve kod kalıpları",
   "version": "0.7.3",
   "publisher": "AtsCreativeMedia",
+  "license": "MIT",
+  "icon": "images/icon.png",
+  "homepage": "https://github.com/DEVEymen/ATSLang#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DEVEymen/ATSLang.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DEVEymen/ATSLang/issues"
+  },
+  "galleryBanner": {
+    "color": "#0b1220",
+    "theme": "dark"
+  },
+  "keywords": [
+    "atslang",
+    "türkçe",
+    "turkish",
+    "programlama dili",
+    "programming language",
+    "eğitim"
+  ],
   "engines": {
     "vscode": "^1.60.0"
   },
   "categories": [
-    "Programming Languages"
+    "Programming Languages",
+    "Snippets"
   ],
   "contributes": {
     "languages": [
@@ -48,6 +71,5 @@
         "editor.wordBasedSuggestions": "matchingDocuments"
       }
     }
-  },
-  "license": "MIT"
+  }
 }

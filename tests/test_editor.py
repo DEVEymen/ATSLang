@@ -53,3 +53,12 @@ def test_every_keyword_and_builtin_has_a_completion():
     assert set(BUILTINS) <= prefixes
     package = json.loads((root / "package.json").read_text(encoding="utf-8"))
     assert package["contributes"]["snippets"][0]["path"] == "./snippets/atslang.json"
+
+
+def test_marketplace_fields():
+    root = GRAMMAR.parent.parent
+    package = json.loads((root / "package.json").read_text(encoding="utf-8"))
+    for field in ("publisher", "license", "icon", "repository", "homepage", "bugs", "description"):
+        assert package.get(field), field
+    assert (root / package["icon"]).exists()
+    assert (root / "LICENSE.txt").exists() and (root / "CHANGELOG.md").exists()

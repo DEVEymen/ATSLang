@@ -23,6 +23,8 @@ CONTENT_TYPES = """<?xml version="1.0" encoding="utf-8"?>
   <Default Extension=".json" ContentType="application/json"/>
   <Default Extension=".vsixmanifest" ContentType="text/xml"/>
   <Default Extension=".md" ContentType="text/markdown"/>
+  <Default Extension=".png" ContentType="image/png"/>
+  <Default Extension=".txt" ContentType="text/plain"/>
 </Types>
 """
 
@@ -32,11 +34,27 @@ MANIFEST = """<?xml version="1.0" encoding="utf-8"?>
     <Identity Language="en-US" Id="{name}" Version="{version}" Publisher="{publisher}"/>
     <DisplayName>{display}</DisplayName>
     <Description xml:space="preserve">{description}</Description>
-    <Categories>Programming Languages</Categories>
+    <Tags>{tags}</Tags>
+    <Categories>{categories}</Categories>
+    <GalleryFlags>Public</GalleryFlags>
     <Properties>
       <Property Id="Microsoft.VisualStudio.Code.Engine" Value="{engine}"/>
+      <Property Id="Microsoft.VisualStudio.Code.ExtensionDependencies" Value=""/>
+      <Property Id="Microsoft.VisualStudio.Code.ExtensionPack" Value=""/>
       <Property Id="Microsoft.VisualStudio.Code.ExtensionKind" Value="workspace"/>
+      <Property Id="Microsoft.VisualStudio.Code.LocalizedLanguages" Value=""/>
+      <Property Id="Microsoft.VisualStudio.Services.Links.Source" Value="{repository}"/>
+      <Property Id="Microsoft.VisualStudio.Services.Links.Getstarted" Value="{repository}"/>
+      <Property Id="Microsoft.VisualStudio.Services.Links.GitHub" Value="{repository}"/>
+      <Property Id="Microsoft.VisualStudio.Services.Links.Support" Value="{bugs}"/>
+      <Property Id="Microsoft.VisualStudio.Services.Links.Learn" Value="{homepage}"/>
+      <Property Id="Microsoft.VisualStudio.Services.Branding.Color" Value="{banner_color}"/>
+      <Property Id="Microsoft.VisualStudio.Services.Branding.Theme" Value="{banner_theme}"/>
+      <Property Id="Microsoft.VisualStudio.Services.GitHubFlavoredMarkdown" Value="true"/>
+      <Property Id="Microsoft.VisualStudio.Services.Content.Pricing" Value="Free"/>
     </Properties>
+    <License>extension/LICENSE.txt</License>
+    <Icon>extension/{icon}</Icon>
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Code"/>
@@ -45,6 +63,9 @@ MANIFEST = """<?xml version="1.0" encoding="utf-8"?>
   <Assets>
     <Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true"/>
     <Asset Type="Microsoft.VisualStudio.Services.Content.Details" Path="extension/README.md" Addressable="true"/>
+    <Asset Type="Microsoft.VisualStudio.Services.Content.Changelog" Path="extension/CHANGELOG.md" Addressable="true"/>
+    <Asset Type="Microsoft.VisualStudio.Services.Content.License" Path="extension/LICENSE.txt" Addressable="true"/>
+    <Asset Type="Microsoft.VisualStudio.Services.Icons.Default" Path="extension/{icon}" Addressable="true"/>
   </Assets>
 </PackageManifest>
 """
@@ -56,6 +77,12 @@ def build(output: Path = OUTPUT) -> Path:
         name=escape(package["name"]), version=escape(package["version"]),
         publisher=escape(package["publisher"]), display=escape(package["displayName"]),
         description=escape(package["description"]), engine=escape(package["engines"]["vscode"]),
+        tags=escape(",".join(package.get("keywords", []))),
+        categories=escape(",".join(package.get("categories", []))),
+        repository=escape(package["repository"]["url"]), bugs=escape(package["bugs"]["url"]),
+        homepage=escape(package["homepage"]), icon=escape(package["icon"]),
+        banner_color=escape(package["galleryBanner"]["color"]),
+        banner_theme=escape(package["galleryBanner"]["theme"]),
     )
     # Fixed timestamps keep the file identical between builds.
     def add(zf: zipfile.ZipFile, name: str, data: bytes) -> None:

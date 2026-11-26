@@ -1,22 +1,47 @@
-# ATSLang için VS Code eklentisi
+# ATSLang for VS Code
 
-`.atslang` dosyalarında şunları sağlar:
+**[ATSLang](https://github.com/DEVEymen/ATSLang)**, Türkçe anahtar kelimeli ve öğrenmesi kolay bir programlama dilidir. Bu eklenti `.atslang` dosyaları için düzenleyici desteği sağlar.
 
-- Renkli kod gösterimi: anahtar kelimeler, metinler, sayılar, yorumlar, yerleşik fonksiyonlar, tipler
-- Otomatik tamamlama: yazarken anahtar kelimeler ve fonksiyonlar açıklamalarıyla listelenir, seçince kalıp yazılır (`eger`, `her`, `fonksiyon`...)
-- `Ctrl+/` ile satırı yoruma çevirme (`#`)
-- Parantez, köşeli parantez ve tırnak eşleştirme, otomatik kapatma
-- `{` sonrasında otomatik girinti
+![ATSLang kod örneği](https://raw.githubusercontent.com/DEVEymen/ATSLang/main/docs/gorseller/kod.png)
 
-## Kurulum (Windows)
+## Özellikler
 
-Proje klasöründeki **`vscode_kur.bat`** dosyasına çift tıklayın, sonra VS Code'u yeniden başlatın.
+- 🎨 **Renklendirme:** anahtar kelimeler, metinler ve kaçış dizileri, sayılar, yorumlar, yerleşik fonksiyonlar, tipler
+- ⚡ **Otomatik tamamlama:** yazarken bütün anahtar kelimeler ve yerleşik fonksiyonlar Türkçe açıklamalarıyla listelenir
+- 🧩 **Kod kalıpları:** `eger` yazıp Enter'a basınca blok kalıbı gelir, `Tab` ile boşluklar arasında geçilir
+- 💬 `Ctrl+/` ile satırı yoruma çevirme (`#`)
+- 🔗 Parantez, köşeli parantez ve tırnak eşleştirme, `{` sonrasında otomatik girinti
 
-Olmazsa elle: VS Code → Eklentiler paneli → sağ üstteki **...** → **Install from VSIX...** → `editor/atslang.vsix` dosyasını seçin.
+## ATSLang'e kısa bir bakış
 
-`editor/vscode` içinde değişiklik yaptıktan sonra paketi yeniden oluşturun: `python tools/build_vsix.py`
+```
+fonksiyon kare(x: tam): tam {
+    dondur x * x
+}
 
-Elle kurmak isterseniz bu `editor/vscode` klasörünü şuraya kopyalayın:
-`%USERPROFILE%\.vscode\extensions\AtsCreativeMedia.atslang-0.7.3`
+her i aralik(1, 5) {
+    yaz(metin(i) + " x " + metin(i) + " = " + metin(kare(i)))
+}
 
-Kaldırmak için aynı klasörü silmeniz yeterli.
+var ad = oku("Adın ne? ")
+eger ad != "" {
+    yaz("Merhaba " + ad + "!")
+}
+```
+
+## Programları çalıştırmak
+
+Bu eklenti yalnızca düzenleyici desteği sağlar. Programları çalıştırmak için ATSLang'in kendisi gerekir:
+
+```
+git clone https://github.com/DEVEymen/ATSLang.git
+cd ATSLang
+pip install -e .
+ats program.atslang
+```
+
+Ayrıntılar, belgeler ve örnekler: **[github.com/DEVEymen/ATSLang](https://github.com/DEVEymen/ATSLang)**
+
+## Lisans
+
+MIT © 2026 ATS Creative Media

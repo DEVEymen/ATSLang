@@ -1,0 +1,12 @@
+# Değişiklikler
+
+## 0.7.3
+- Yayıncı: AtsCreativeMedia
+- Marketplace için ikon, lisans ve bağlantılar
+
+## 0.7.2
+- Otomatik tamamlama: anahtar kelimeler ve yerleşik fonksiyonlar açıklamalarıyla
+- Kod kalıpları: `eger`, `her`, `iken`, `fonksiyon`...
+
+## 0.7.0
+- İlk sürüm: renklendirme, yorum satırı kısayolu, parantez eşleştirme, otomatik girinti
